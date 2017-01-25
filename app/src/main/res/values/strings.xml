@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">RentMyCar</string>
-    <string name="welcome">Benvenuto</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
     <string name="change_text">Cambia testo</string>
     <string name="change_text_hint">Inserisci testo</string>
+    <string name="name">Nome</string>
 
 </resources>

@@ -1,6 +1,7 @@
 package android.vm.rentmycar;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -18,16 +19,18 @@ import com.google.android.gms.common.api.GoogleApiClient;
  */
 
 public class MainActivity extends Activity {
-
-    TextView welcomeTv;
+    //public static final String USERNAME_KEY="username"; usato per passare le chiavi senza scrivere il nome tra apici ma riportando la variabile statica.
+    TextView usernTv,passTv ;
     Button changeTextButton;
     EditText changeTextEdit;
-
+    MainActivity activity=this;
+    String username;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        welcomeTv=(TextView) findViewById(R.id.welcome_tv);//prendo il controllo della textview(presente in xml) dalla classe java
+        usernTv=(TextView) findViewById(R.id.usern_tv);//prendo il controllo della textview(presente in xml) dalla classe java
+        passTv=(TextView) findViewById(R.id.pass_tv);
         changeTextButton = (Button) findViewById(R.id.change_text_button);
 
         changeTextEdit= (EditText)findViewById(R.id.change_text_edit);
@@ -35,7 +38,11 @@ public class MainActivity extends Activity {
         changeTextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                welcomeTv.setText(changeTextEdit.getText());
+               // welcomeTv.setText(changeTextEdit.getText());
+                username=changeTextEdit.getText().toString();
+                Intent intent = new Intent(activity,RegistratiActivity.class);
+                intent.putExtra("username",username);
+                startActivity(intent);
             }
         });
 
