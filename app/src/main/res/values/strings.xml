@@ -4,6 +4,10 @@
     <string name="password">Password</string>
     <string name="change_text">Cambia testo</string>
     <string name="change_text_hint">Inserisci testo</string>
-    <string name="name">Nome</string>
+    <string name="emailReg">Email:</string>
+    <string name="username_reg">Username:</string>
+    <string name="password_reg">Password:</string>
+    <string name="registrati_reg">Registrati</string>
+    <string name="backlog_reg">Torna al Login</string>
 
 </resources>
