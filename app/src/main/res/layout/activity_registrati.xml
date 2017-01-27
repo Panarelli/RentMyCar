@@ -16,9 +16,9 @@
 
         <TextView
             android:id="@+id/tv_nome"
+            android:text="@string/nome_reg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/nome_reg"
             android:layout_centerHorizontal="true"
             />
         <EditText
@@ -44,6 +44,125 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/tv_cognome"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_datanascita"
+            android:text="@string/dataNas_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_cognome"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            />
+        <CalendarView
+            android:id="@+id/cv_datanascita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_datanascita"
+            android:transitionName="@string/dataNas_reg"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/tv_indirizzzoResidenza"
+            android:text="@string/indirizzo_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cv_datanascita"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            />
+        <EditText
+            android:id="@+id/et_indirizzo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_indirizzzoResidenza"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_cap"
+            android:text="@string/cap_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_indirizzo"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            />
+        <EditText
+            android:id="@+id/et_cap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_cap"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_città"
+            android:text="@string/città_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/et_cap"
+            android:layout_marginTop="5dp"
+            />
+        <EditText
+            android:id="@+id/et_città"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_città"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_cf"
+            android:text="@string/cf_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/et_città"
+            android:layout_marginTop="5dp"
+            />
+        <EditText
+            android:id="@+id/et_cf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_cf"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_telefono"
+            android:text="@string/telefono_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/et_cf"
+            android:layout_marginTop="5dp"
+            />
+        <EditText
+            android:id="@+id/et_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_telefono"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_npatente"
+            android:text="@string/cf_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/et_telefono"
+            android:layout_marginTop="5dp"
+            />
+        <EditText
+            android:id="@+id/et_npatente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_npatente"
             android:layout_marginTop="5dp"
             />
 

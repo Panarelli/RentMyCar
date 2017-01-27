@@ -13,7 +13,7 @@
     <string name="nome_reg">Nome:</string>
     <string name="cognome_reg">Cognome:</string>
     <string name="dataNas_reg">Data di nascita:</string>
-    <string name="indirizzo_reg">Indirizzo:</string>
+    <string name="indirizzo_reg">Indirizzo di Residenza:</string>
     <string name="cap_reg">CAP:</string>
     <string name="città_reg">Città:</string>
     <string name="cf_reg">CF:</string>
