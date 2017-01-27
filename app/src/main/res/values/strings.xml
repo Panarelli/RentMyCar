@@ -5,5 +5,7 @@
     <string name="change_text">Cambia testo</string>
     <string name="change_text_hint">Inserisci testo</string>
     <string name="name">Nome</string>
+    <string name="search_home">Cerca</string>
+    <string name="offer_home">Offri</string>
 
 </resources>
