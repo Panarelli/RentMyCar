@@ -21,7 +21,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 public class MainActivity extends Activity {
     //public static final String USERNAME_KEY="username"; usato per passare le chiavi senza scrivere il nome tra apici ma riportando la variabile statica.
     TextView usernTv,passTv ;
-    Button changeTextButton;
+    Button registratiButton;
     EditText changeTextEdit;
     MainActivity activity=this;
     String username;
@@ -30,20 +30,15 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        usernTv=(TextView) findViewById(R.id.usern_tv);//prendo il controllo della textview(presente in xml) dalla classe java
-        passTv=(TextView) findViewById(R.id.pass_tv);
-        changeTextButton = (Button) findViewById(R.id.change_text_button);
+        registratiButton = (Button) findViewById(R.id.btn_registrati);
 
-        changeTextEdit= (EditText)findViewById(R.id.change_text_edit);
-
-        changeTextButton.setOnClickListener(new View.OnClickListener() {
+//COLLEGARE BOTTONE LOGIN A HOMEACTIVITY! <------------
+        registratiButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               // welcomeTv.setText(ch
-                // angeTextEdit.getText());
-               // username=changeTextEdit.getText().toString();
-                Intent intent = new Intent(activity,HomeActivity.class);
-               // intent.putExtra("username",username);
+
+
+                Intent intent = new Intent(activity,RegistratiActivity.class);
                 startActivity(intent);
             }
         });

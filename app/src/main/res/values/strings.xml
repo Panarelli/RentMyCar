@@ -2,15 +2,21 @@
     <string name="app_name">RentMyCar</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
-    <string name="change_text">Cambia testo</string>
-    <string name="change_text_hint">Inserisci testo</string>
-    <string name="name">Nome</string>
+    <string name="oppure">Oppure</string>
+    <string name="login">Login</string>
+    <string name="email_reg">Email:</string>
     <string name="search_home">Cerca</string>
     <string name="offer_home">Offri</string>
-    <string name="emailReg">Email:</string>
     <string name="username_reg">Username:</string>
     <string name="password_reg">Password:</string>
-    <string name="registrati_reg">Registrati</string>
-    <string name="backlog_reg">Torna al Login</string>
-
+    <string name="registrati">Registrati</string>
+    <string name="nome_reg">Nome:</string>
+    <string name="cognome_reg">Cognome:</string>
+    <string name="dataNas_reg">Data di nascita:</string>
+    <string name="indirizzo_reg">Indirizzo di Residenza:</string>
+    <string name="cap_reg">CAP:</string>
+    <string name="città_reg">Città:</string>
+    <string name="cf_reg">CF:</string>
+    <string name="telefono_reg">Telefono:</string>
+    <string name="numPatente_reg">Numero Patente:</string>
 </resources>
