@@ -1,74 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_height="wrap_content"
-    android:layout_width="fill_parent"
-    android:background="#fff"
-    >
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
 
-    <!-- Registration Form -->
-    <LinearLayout
+    <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:padding="10dip"
-        >
+        android:layout_alignParentEnd="true"
+        android:weightSum="1">
 
-        <!-- Email Label -->
         <TextView
-            android:layout_width="fill_parent"
+            android:id="@+id/tv_nome"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#372c24"
-            android:text="@string/emailReg"/>
+            android:text="@string/nome_reg"
+            android:layout_centerHorizontal="true"
+            />
         <EditText
-            android:id="@+id/reg_email"
-            android:layout_width="fill_parent"
+            android:id="@+id/et_nome"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dip"
-            android:layout_marginBottom="20dip"/>
-
-        <!--  Username Label -->
-        <TextView android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#372c24"
-            android:text="@string/username_reg"/>
-
-        <EditText android:id="@+id/reg_username"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dip"
-            android:layout_marginBottom="20dip"/>
-
-        <!-- Password Label -->
-        <TextView android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#372c24"
-            android:text="@string/password_reg"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tv_nome"
+            android:layout_alignParentStart="true"
             />
 
-        <EditText android:id="@+id/reg_password"
-            android:layout_width="fill_parent"
+        <TextView
+            android:id="@+id/tv_cognome"
+            android:text="@string/cognome_reg"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:password="true"
-            android:singleLine="true"
-            android:layout_marginTop="5dip"
+            android:layout_below="@+id/et_nome"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/et_cognome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_cognome"
+            android:layout_marginTop="5dp"
             />
 
-        <!-- Registrati Button -->
-        <Button android:id="@+id/btnRegister"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dip"
-            android:text="@string/registrati_reg"/>
+    </RelativeLayout>
+</ScrollView>
 
-        <!-- Bottone al Login -->
-        <Button android:id="@+id/btnBackLog"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dip"
-            android:text="@string/backlog_reg"/>
-
-    </LinearLayout>
     <!-- Registration Form Ends -->
-</RelativeLayout>
