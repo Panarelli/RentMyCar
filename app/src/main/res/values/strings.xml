@@ -7,5 +7,10 @@
     <string name="name">Nome</string>
     <string name="search_home">Cerca</string>
     <string name="offer_home">Offri</string>
+    <string name="emailReg">Email:</string>
+    <string name="username_reg">Username:</string>
+    <string name="password_reg">Password:</string>
+    <string name="registrati_reg">Registrati</string>
+    <string name="backlog_reg">Torna al Login</string>
 
 </resources>
