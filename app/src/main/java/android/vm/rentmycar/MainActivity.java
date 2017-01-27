@@ -30,19 +30,15 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //usernTv=(TextView) findViewById(R.id.usern_tv);//prendo il controllo della textview(presente in xml) dalla classe java
-        //passTv=(TextView) findViewById(R.id.pass_tv);
-        registratiButton = (Button) findViewById(R.id.registrati_button);
+        registratiButton = (Button) findViewById(R.id.btn_registrati);
 
-        //changeTextEdit= (EditText)findViewById(R.id.change_text_edit);
-
+//COLLEGARE BOTTONE LOGIN A HOMEACTIVITY! <------------
         registratiButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               // welcomeTv.setText(changeTextEdit.getText());
-                //username=changeTextEdit.getText().toString();
+
+
                 Intent intent = new Intent(activity,RegistratiActivity.class);
-                //intent.putExtra("username",username);
                 startActivity(intent);
             }
         });
