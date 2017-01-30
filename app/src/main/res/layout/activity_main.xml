@@ -3,20 +3,26 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:background="@color/grey_dark">
     <TextView
         android:id="@+id/usern_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
         android:text="@string/username"
+        android:textColor="@color/black"
         />
     <EditText
         android:id="@+id/et_usern"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginTop="5dp"
         android:layout_below="@+id/usern_tv"
+        android:background="@color/grey"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
          />
 
     <TextView
@@ -27,22 +33,28 @@
         android:layout_below="@+id/et_usern"
         android:layout_marginTop="40dp"
         android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
         />
     <EditText
         android:id="@+id/et_pass"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginTop="5dp"
         android:layout_below="@+id/pass_tv"
-        />
+        android:background="@color/grey"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"/>
 
     <Button
         android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_centerHorizontal="true"
         android:layout_below="@+id/et_pass"
-        android:layout_marginTop="10dp"
-        android:text="@string/login"/>
+        android:layout_marginTop="20dp"
+        android:text="@string/login"
+        android:background="@color/orange"/>
 
     <TextView
         android:id="@+id/tv_oppure"
@@ -52,17 +64,19 @@
         android:layout_below="@+id/btn_login"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
         />
 
     <Button
         android:id="@+id/btn_registrati"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
         android:text="@string/registrati"
         android:layout_below="@id/tv_oppure"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-
+        android:background="@color/orange"
         />
 
 </RelativeLayout>

@@ -9,17 +9,68 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="10dip"
-        android:layout_alignParentEnd="true"
-        android:weightSum="1">
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:text="@string/email_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            />
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tv_email"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_usern"
+            android:text="@string/username_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_email"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            />
+        <EditText
+            android:id="@+id/et_usern"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tv_usern"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:text="@string/password_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_usern"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            />
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tv_password"
+            android:layout_alignParentStart="true"
+            />
 
         <TextView
             android:id="@+id/tv_nome"
             android:text="@string/nome_reg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/et_password"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
             />
         <EditText
             android:id="@+id/et_nome"
@@ -63,6 +114,7 @@
             android:layout_below="@+id/tv_datanascita"
             android:transitionName="@string/dataNas_reg"
             android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
             />
         <TextView
             android:id="@+id/tv_indirizzzoResidenza"
@@ -165,6 +217,14 @@
             android:layout_below="@+id/tv_npatente"
             android:layout_marginTop="5dp"
             />
+
+        <Button
+            android:id="@+id/btn_registrati_reg"
+            android:text="@string/registrati"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_npatente"
+            android:layout_marginTop="10dp"/>
 
     </RelativeLayout>
 </ScrollView>
