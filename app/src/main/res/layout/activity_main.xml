@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1"
-    android:background="@color/grey_dark">
+    android:background="@color/blu">
     <TextView
         android:id="@+id/usern_tv"
         android:layout_width="wrap_content"
@@ -20,7 +20,7 @@
         android:layout_height="40dp"
         android:layout_marginTop="5dp"
         android:layout_below="@+id/usern_tv"
-        android:background="@color/grey"
+        android:background="@color/light_orange"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="20dp"
          />
@@ -41,7 +41,7 @@
         android:layout_height="40dp"
         android:layout_marginTop="5dp"
         android:layout_below="@+id/pass_tv"
-        android:background="@color/grey"
+        android:background="@color/light_orange"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="20dp"/>
 
