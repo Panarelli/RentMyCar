@@ -29,9 +29,19 @@ public class HomeActivity extends Activity{
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                Intent intent = new Intent(activity,SearchActivity.class);
+                //intent.putExtra("username",username);
+                startActivity(intent);
+            }
+        });
+
+        offerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 // welcomeTv.setText(ch
                 // angeTextEdit.getText();
-                Intent intent = new Intent(activity,SearchActivity.class);
+                Intent intent = new Intent(activity,OfferActivity.class);
                 //intent.putExtra("username",username);
                 startActivity(intent);
             }

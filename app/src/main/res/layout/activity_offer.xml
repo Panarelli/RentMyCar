@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvaggiungicitta"
+        android:text="@string/citta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:id="@+id/etaggiungicitta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tvaggiungicitta"
+        android:layout_alignParentStart="true"
+        />
+    <TextView
+        android:id="@+id/tvmodelloAuto"
+        android:text="@string/modello_auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:id="@+id/etmodelloAuto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tvmodelloAuto"
+        android:layout_alignParentStart="true"
+        />
+
+    <TextView
+        android:id="@+id/tvmarca_auto"
+        android:text="@string/marca_auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etmodelloAuto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+    <EditText
+        android:id="@+id/et_marcaAuto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvmarca_auto"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/tvdatainizionoleggio"
+        android:text="@string/datainizionoleggio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_marcaAuto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+    <CalendarView
+        android:id="@+id/cv_datainizionoleggio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvdatainizionoleggio"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/tvdatafinenoleggio"
+        android:text="@string/datafinenoleggio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cv_datainizionoleggio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+    <CalendarView
+        android:id="@+id/cv_datafinenoleggio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvdatafinenoleggio"
+        android:layout_marginTop="5dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_inserisciauto"
+        android:text="@string/inserisciAuto"/>
+
+
+
+
+</LinearLayout>
+
+    </ScrollView>

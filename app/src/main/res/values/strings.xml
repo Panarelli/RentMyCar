@@ -19,4 +19,13 @@
     <string name="cf_reg">CF:</string>
     <string name="telefono_reg">Telefono:</string>
     <string name="numPatente_reg">Numero Patente:</string>
+    <string name="modello_auto">Inserisci Modello Auto:</string>
+    <string name="marca_auto">Inserisci Marca Auto:</string>
+    <string name="posti_auto">Inserisci Numero Posti Auto:</string>
+    <string name="datainizionoleggio">Inserisci Data inizio noleggio:</string>
+    <string name="datafinenoleggio">Inserisci Data fine noleggio:</string>
+    <string name="cerca">Cerca</string>
+    <string name="citta">Aggiungi Città</string>
+    <string name="inserisciAuto">Inserisci Auto</string>
+
 </resources>
