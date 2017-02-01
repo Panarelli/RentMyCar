@@ -28,8 +28,6 @@ public class AutocompleteActivity extends FragmentActivity implements GoogleApiC
 
     private GoogleApiClient mGoogleApiClient;
 
-    public JSONObject
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
