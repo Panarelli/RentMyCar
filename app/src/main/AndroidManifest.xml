@@ -34,7 +34,6 @@
         <activity android:name=".ShowCars"></activity>
         <activity android:name=".AutocompleteActivity"></activity>
 
-
     </application>
 
 </manifest>
