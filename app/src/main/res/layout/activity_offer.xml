@@ -25,6 +25,7 @@
         android:layout_below="@+id/tvaggiungicitta"
         android:layout_alignParentStart="true"
         />
+
     <TextView
         android:id="@+id/tvmodelloAuto"
         android:text="@string/modello_auto"

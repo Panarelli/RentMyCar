@@ -8,6 +8,9 @@ import android.widget.Button;
 import android.widget.CalendarView;
 import android.widget.EditText;
 
+import com.google.android.gms.location.places.Place;
+import com.google.android.gms.location.places.ui.PlaceAutocomplete;
+
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -19,7 +22,7 @@ public class OfferActivity extends Activity {
     Button inserisciAuto;
     Activity activity=this;
     ArrayList<String> cities;
-
+    EditText aggiungicitta;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_offer);
@@ -37,15 +40,30 @@ public class OfferActivity extends Activity {
             @Override
             public void onClick(View view) {
                 cities= new ArrayList<String>();
-                EditText chosecity = (EditText) findViewById(R.id.etaggiungicitta);
-                String s= ""+chosecity.getText();
-                cities.add(s);
-                for(int i=0;i<cities.size();i++){
-                    System.out.println(cities.get(i));
-                }
+                aggiungicitta = (EditText) findViewById(R.id.etaggiungicitta);
+
 
 
             }
         });
+        aggiungicitta= (EditText)findViewById(R.id.etaggiungicitta);
+        aggiungicitta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(activity,AutocompleteActivity.class);
+                startActivityForResult(intent,200);
+            }
+        });
+
+    }
+
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(resultCode == RESULT_OK && requestCode == 200){
+            Place place = PlaceAutocomplete.getPlace(this,data);
+            aggiungicitta.setText(place.getName());
+        }
     }
 }
