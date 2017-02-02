@@ -45,17 +45,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="20dp"/>
 
-    <Button
-        android:id="@+id/btn_login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="80dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/et_pass"
-        android:layout_marginTop="20dp"
-        android:text="@string/login"
-        android:background="@color/orange"/>
-
     <TextView
         android:id="@+id/tv_oppure"
         android:layout_width="wrap_content"
@@ -78,6 +67,17 @@
         android:layout_marginTop="20dp"
         android:background="@color/orange"
         />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/login"
+        android:background="@color/orange"
+        android:layout_below="@+id/et_pass"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
 

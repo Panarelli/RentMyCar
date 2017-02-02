@@ -4,7 +4,6 @@ import android.widget.CalendarView;
 import android.widget.EditText;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.TextView;
 
 /**
  * Created by albof on 02/02/2017.

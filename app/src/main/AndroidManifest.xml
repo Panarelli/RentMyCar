@@ -35,6 +35,10 @@
         <activity android:name=".SearchActivity"></activity>
         <activity android:name=".OfferActivity"></activity>
         <activity android:name=".ShowCars"></activity>
+        <activity android:name=".AutocompleteActivity"></activity>
+
+
+
 
     </application>
 

@@ -3,7 +3,6 @@ package android.vm.rentmycar;
 import java.util.HashMap;
 import java.util.Map;
 
-import static android.R.attr.name;
 
 /**
  * Created by panar on 30/01/2017.
@@ -11,25 +10,26 @@ import static android.R.attr.name;
 
 public class Automobile {
 
-    private String marca,modello,data;
-    private int numeroposti;
+    private String marca, modello, datainizio, datafine, citta;
+
+    public Automobile(String marca, String modello, String datainizio, String datafine, String citta) {
+        this.marca = marca;
+        this.modello = modello;
+        this.datainizio = datainizio;
+        this.datafine = datafine;
+        this.citta = citta;
+    }
 
     public Automobile() {
     }
 
-    public Automobile(String marca, String modello, String data, int numeroposti) {
-        this.marca = marca;
-        this.modello = modello;
-        this.data = data;
-        this.numeroposti = numeroposti;
-    }
-
     public Map<String, Object> toMap() {
         HashMap<String, Object> result = new HashMap<>();
-        result.put("Marca", marca);
-        result.put("Modello", modello);
-        result.put("Data", data);
-        result.put("Numero Posti", numeroposti);
+        result.put("modello", modello);
+        result.put("marca", marca);
+        result.put("datainizio", datainizio);
+        result.put("datafine", datafine);
+        result.put("citta", citta);
         return result;
     }
 
@@ -49,19 +49,24 @@ public class Automobile {
         this.modello = modello;
     }
 
-    public String getData() {
-        return data;
+    public String getDatainizio() {
+        return datainizio;
     }
 
-    public void setData(String data) {
-        this.data = data;
+    public void setDatainizio(String datainizio) {
+        this.datainizio = datainizio;
     }
 
-    public int getNumeroposti() {
-        return numeroposti;
+    public String getDatafine() {
+        return datafine;
     }
 
-    public void setNumeroposti(int numeroposti) {
-        this.numeroposti = numeroposti;
+    public void setDatafine(String datafine) {
+        this.datafine = datafine;
     }
+
+    public String getCitta() {
+        return citta;
+    }
+
 }

@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-
 public class RegistratiActivity extends Activity {
 
     Button confermaRegistratiButton;
@@ -32,4 +31,6 @@ public class RegistratiActivity extends Activity {
             }
         });
     }
+
+
 }

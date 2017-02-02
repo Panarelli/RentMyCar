@@ -26,6 +26,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         registratiButton = (Button) findViewById(R.id.btn_registrati);
         loginButton = (Button) findViewById(R.id.btn_login);
         registratiButton.setOnClickListener(new View.OnClickListener() {
@@ -38,18 +39,15 @@ public class MainActivity extends Activity {
             }
         });
 
-
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(activity, HomeActivity.class);
-                startActivity(intent);
+
+                Intent intent1 = new Intent(activity, HomeActivity.class);
+                startActivity(intent1);
             }
         });
 
-
     }
 
-
-
-    }
+}
