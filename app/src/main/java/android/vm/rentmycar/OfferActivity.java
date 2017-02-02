@@ -40,13 +40,13 @@ public class OfferActivity extends Activity {
             @Override
             public void onClick(View view) {
                 cities= new ArrayList<String>();
-                aggiungicitta = (EditText) findViewById(R.id.etaggiungicitta);
+                aggiungicitta = (EditText) findViewById(R.id.et_aggiungicitta);
 
 
 
             }
         });
-        aggiungicitta= (EditText)findViewById(R.id.etaggiungicitta);
+        aggiungicitta= (EditText)findViewById(R.id.et_aggiungicitta);
         aggiungicitta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

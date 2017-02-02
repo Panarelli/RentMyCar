@@ -7,7 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CalendarView;
 
+
 import java.util.Date;
+import java.util.Map;
 
 public class RegistratiActivity extends Activity {
 
@@ -39,4 +41,6 @@ public class RegistratiActivity extends Activity {
             }
         });
     }
+
+
 }
