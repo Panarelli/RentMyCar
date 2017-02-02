@@ -1,27 +1,28 @@
 {
   "project_info": {
-    "project_number": "189398037407",
-    "firebase_url": "https://rentmycar-2e1dd.firebaseio.com",
-    "project_id": "rentmycar-2e1dd",
-    "storage_bucket": "rentmycar-2e1dd.appspot.com"
+
+    "project_number": "261587610928",
+    "firebase_url": "https://rentmycar-21116.firebaseio.com",
+    "project_id": "rentmycar-21116",
+    "storage_bucket": "rentmycar-21116.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:189398037407:android:99cc4997ff59c355",
+        "mobilesdk_app_id": "1:261587610928:android:99cc4997ff59c355",
         "android_client_info": {
           "package_name": "com.rentmycar.android"
         }
       },
       "oauth_client": [
         {
-          "client_id": "189398037407-5tbdtpubks8or02rcvu0sahdu3vde3h9.apps.googleusercontent.com",
+          "client_id": "261587610928-326o6jj668o5kdv7lgqa4gqld39no201.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAsPZdKuiMA3CAinwNZuuhaVj_nHpeIXmk"
+          "current_key": "AIzaSyADmiQ9aWBfpOPSfwVV3_8qzWi0U5Ciqes"
         }
       ],
       "services": {
@@ -31,6 +32,42 @@
         "appinvite_service": {
           "status": 1,
           "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:261587610928:android:81378618600b0d40",
+        "android_client_info": {
+          "package_name": "android.vm.rentmycar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "261587610928-326o6jj668o5kdv7lgqa4gqld39no201.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADmiQ9aWBfpOPSfwVV3_8qzWi0U5Ciqes"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "261587610928-326o6jj668o5kdv7lgqa4gqld39no201.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

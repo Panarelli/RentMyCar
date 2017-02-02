@@ -18,7 +18,7 @@
         android:layout_centerHorizontal="true"
         />
     <EditText
-        android:id="@+id/etaggiungicitta"
+        android:id="@+id/et_aggiungicitta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -34,7 +34,7 @@
         android:layout_centerHorizontal="true"
         />
     <EditText
-        android:id="@+id/etmodelloAuto"
+        android:id="@+id/et_modelloAuto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
